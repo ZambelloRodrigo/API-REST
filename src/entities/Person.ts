@@ -28,6 +28,10 @@ class Person {
     updatedAt: Date;
 
     constructor(firstName: string, lastName: string, phone: string, email: string, cpf: string){
+        this.setProperties(firstName, lastName, phone, email, cpf);
+    }
+
+    setProperties(firstName: string, lastName: string, phone: string, email: string, cpf: string){
         this.firstName = firstName;
         this.lastName  = lastName;
         this.phone     = phone;
